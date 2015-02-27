@@ -7,11 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4C727A48194791A800CBA6D8 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C727A47194791A800CBA6D8 /* main.swift */; };
-		4C727A4A194791A800CBA6D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C727A49194791A800CBA6D8 /* AppDelegate.swift */; };
 		4C727A4C194791A800CBA6D8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C727A4B194791A800CBA6D8 /* Images.xcassets */; };
 		4C727A4F194791A800CBA6D8 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C727A4D194791A800CBA6D8 /* MainMenu.xib */; };
 		4C727A5B194791A800CBA6D8 /* SwiftPiano2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C727A5A194791A800CBA6D8 /* SwiftPiano2Tests.swift */; };
+		4C727A741947926500CBA6D8 /* PianoWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C727A711947925400CBA6D8 /* PianoWindow.swift */; };
+		4C727A751947926500CBA6D8 /* SharedValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C727A721947925400CBA6D8 /* SharedValues.swift */; };
+		4C727A761947926D00CBA6D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C727A671947925400CBA6D8 /* AppDelegate.swift */; };
+		4C727A771947926D00CBA6D8 /* ExtensionKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C727A6A1947925400CBA6D8 /* ExtensionKit.swift */; };
+		4C727A781947926D00CBA6D8 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C727A6D1947925400CBA6D8 /* main.swift */; };
+		4C727A791947926D00CBA6D8 /* PianoAudio.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C727A6E1947925400CBA6D8 /* PianoAudio.c */; };
+		4C727A7A1947926D00CBA6D8 /* PianoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C727A701947925400CBA6D8 /* PianoView.swift */; };
+		4C7ACCED19D66589003E8E68 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C68882119783A9900BF4FB6 /* Cocoa.framework */; };
+		4C7ACCEE19D6658E003E8E68 /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C727A7B194792EB00CBA6D8 /* CoreMIDI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,15 +32,29 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4C68882119783A9900BF4FB6 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		4C68882319783AB000BF4FB6 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
+		4C68882519783AB700BF4FB6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4C727A42194791A800CBA6D8 /* SwiftPiano2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftPiano2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C727A46194791A800CBA6D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4C727A47194791A800CBA6D8 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		4C727A49194791A800CBA6D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C727A4B194791A800CBA6D8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4C727A4E194791A800CBA6D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		4C727A54194791A800CBA6D8 /* SwiftPiano2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftPiano2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C727A59194791A800CBA6D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C727A5A194791A800CBA6D8 /* SwiftPiano2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftPiano2Tests.swift; sourceTree = "<group>"; };
+		4C727A671947925400CBA6D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4C727A691947925400CBA6D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		4C727A6A1947925400CBA6D8 /* ExtensionKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionKit.swift; sourceTree = "<group>"; };
+		4C727A6B1947925400CBA6D8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4C727A6C1947925400CBA6D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C727A6D1947925400CBA6D8 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		4C727A6E1947925400CBA6D8 /* PianoAudio.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = PianoAudio.c; sourceTree = "<group>"; };
+		4C727A6F1947925400CBA6D8 /* PianoAudio.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PianoAudio.h; sourceTree = "<group>"; };
+		4C727A701947925400CBA6D8 /* PianoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PianoView.swift; sourceTree = "<group>"; };
+		4C727A711947925400CBA6D8 /* PianoWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PianoWindow.swift; sourceTree = "<group>"; };
+		4C727A721947925400CBA6D8 /* SharedValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedValues.swift; sourceTree = "<group>"; };
+		4C727A731947925400CBA6D8 /* SwiftPiano-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftPiano-Bridging-Header.h"; sourceTree = "<group>"; };
+		4C727A7B194792EB00CBA6D8 /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +62,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C7ACCEE19D6658E003E8E68 /* CoreMIDI.framework in Frameworks */,
+				4C7ACCED19D66589003E8E68 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +80,11 @@
 		4C727A39194791A800CBA6D8 = {
 			isa = PBXGroup;
 			children = (
+				4C68882519783AB700BF4FB6 /* Foundation.framework */,
+				4C68882319783AB000BF4FB6 /* Quartz.framework */,
+				4C68882119783A9900BF4FB6 /* Cocoa.framework */,
+				4C727A7B194792EB00CBA6D8 /* CoreMIDI.framework */,
+				4C727A661947925400CBA6D8 /* SwiftPiano2 */,
 				4C727A44194791A800CBA6D8 /* SwiftPiano2 */,
 				4C727A57194791A800CBA6D8 /* SwiftPiano2Tests */,
 				4C727A43194791A800CBA6D8 /* Products */,
@@ -75,7 +103,6 @@
 		4C727A44194791A800CBA6D8 /* SwiftPiano2 */ = {
 			isa = PBXGroup;
 			children = (
-				4C727A49194791A800CBA6D8 /* AppDelegate.swift */,
 				4C727A4B194791A800CBA6D8 /* Images.xcassets */,
 				4C727A4D194791A800CBA6D8 /* MainMenu.xib */,
 				4C727A45194791A800CBA6D8 /* Supporting Files */,
@@ -87,7 +114,6 @@
 			isa = PBXGroup;
 			children = (
 				4C727A46194791A800CBA6D8 /* Info.plist */,
-				4C727A47194791A800CBA6D8 /* main.swift */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -107,6 +133,25 @@
 				4C727A59194791A800CBA6D8 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4C727A661947925400CBA6D8 /* SwiftPiano2 */ = {
+			isa = PBXGroup;
+			children = (
+				4C727A671947925400CBA6D8 /* AppDelegate.swift */,
+				4C727A681947925400CBA6D8 /* MainMenu.xib */,
+				4C727A6A1947925400CBA6D8 /* ExtensionKit.swift */,
+				4C727A6B1947925400CBA6D8 /* Images.xcassets */,
+				4C727A6C1947925400CBA6D8 /* Info.plist */,
+				4C727A6D1947925400CBA6D8 /* main.swift */,
+				4C727A6E1947925400CBA6D8 /* PianoAudio.c */,
+				4C727A6F1947925400CBA6D8 /* PianoAudio.h */,
+				4C727A701947925400CBA6D8 /* PianoView.swift */,
+				4C727A711947925400CBA6D8 /* PianoWindow.swift */,
+				4C727A721947925400CBA6D8 /* SharedValues.swift */,
+				4C727A731947925400CBA6D8 /* SwiftPiano-Bridging-Header.h */,
+			);
+			path = SwiftPiano2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,8 +253,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C727A4A194791A800CBA6D8 /* AppDelegate.swift in Sources */,
-				4C727A48194791A800CBA6D8 /* main.swift in Sources */,
+				4C727A761947926D00CBA6D8 /* AppDelegate.swift in Sources */,
+				4C727A771947926D00CBA6D8 /* ExtensionKit.swift in Sources */,
+				4C727A781947926D00CBA6D8 /* main.swift in Sources */,
+				4C727A791947926D00CBA6D8 /* PianoAudio.c in Sources */,
+				4C727A7A1947926D00CBA6D8 /* PianoView.swift in Sources */,
+				4C727A741947926500CBA6D8 /* PianoWindow.swift in Sources */,
+				4C727A751947926500CBA6D8 /* SharedValues.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +286,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				4C727A4E194791A800CBA6D8 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		4C727A681947925400CBA6D8 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C727A691947925400CBA6D8 /* Base */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -325,9 +383,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				INFOPLIST_FILE = SwiftPiano2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftPiano2/SwiftPiano-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -336,9 +398,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				INFOPLIST_FILE = SwiftPiano2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftPiano2/SwiftPiano-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -399,6 +465,7 @@
 				4C727A60194791A800CBA6D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4C727A61194791A800CBA6D8 /* Build configuration list for PBXNativeTarget "SwiftPiano2Tests" */ = {
 			isa = XCConfigurationList;
@@ -407,6 +474,7 @@
 				4C727A63194791A800CBA6D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

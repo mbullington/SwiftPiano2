@@ -1,26 +1,25 @@
 //
 //  AppDelegate.swift
-//  SwiftPiano2
+//  SwiftPiano
 //
-//  Created by Michael Bullington on 6/10/14.
+//  Created by Michael Bullington on 6/4/14.
 //  Copyright (c) 2014 Michael Bullington. All rights reserved.
 //
 
 import Cocoa
+import Foundation
 
 class AppDelegate: NSObject, NSApplicationDelegate {
-                            
-    @IBOutlet var window: NSWindow
-
-
+    
+    @IBOutlet var window : PianoWindow?
+    @IBOutlet var toolbar : NSToolbar?
+    
     func applicationDidFinishLaunching(aNotification: NSNotification?) {
-        // Insert code here to initialize your application
+        PianoAudioInit()
     }
-
-    func applicationWillTerminate(aNotification: NSNotification?) {
-        // Insert code here to tear down your application
+    
+    func applicationShouldTerminateAfterLastWindowClosed(sender: NSApplication) -> Bool {
+        return true
     }
-
-
+    
 }
-
